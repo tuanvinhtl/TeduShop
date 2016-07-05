@@ -7,6 +7,7 @@ namespace TeduShop.Model.Models
     public class ProductTag
     {
         [Key]
+        [Column(Order = 1)]
         public int ProductID { set; get; }
 
         [ForeignKey("ProductID")]
@@ -14,7 +15,10 @@ namespace TeduShop.Model.Models
 
 
         [Key]
+        [Column(Order = 2)]
         public string TagID { set; get; }
+
+
         [ForeignKey("TagID")]
         public virtual Tag Tag { set; get; }
 

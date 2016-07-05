@@ -10,7 +10,7 @@ namespace TeduShop.Model.Abstract
         string UpdateBy { set; get; }
         string MetaKeywork { set; get; }
         string Description { set; get; }
-        int DisplayOrder { set; get; }
+        int? DisplayOrder { set; get; }
         bool Status { set; get; }
     }
 }

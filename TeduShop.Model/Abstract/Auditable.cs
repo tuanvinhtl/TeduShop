@@ -20,8 +20,7 @@ namespace TeduShop.Model.Abstract
         [MaxLength(500)]
         public string Description { set; get; }
 
-        [MaxLength(256)]
-        public int DisplayOrder { set; get; }
+        public int? DisplayOrder { set; get; }
    
         public bool Status { set; get; }
     }
