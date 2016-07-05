@@ -29,7 +29,6 @@ namespace TeduShop.Data.Infrastructure
             DbFactory = dbFactory;
             dbSet = DbContext.Set<T>();
         }
-
         #region Implementation
         public virtual T Add(T entity)
         {
